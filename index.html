@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Under Maintenance - Dashboard Jabar</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg%20width%3D%2742%27%20height%3D%2742%27%20viewBox%3D%270%200%2042%2042%27%20fill%3D%27none%27%20xmlns%3D%27http://www.w3.org/2000/svg%27%3E%3Cpath%20d%3D%27M0%2014C0%206.26801%206.26801%200%2014%200H28V31L25%2028H14C6.26801%2028%200%2021.732%200%2014Z%27%20fill%3D%27%23FFCD2A%27/%3E%3Cpath%20d%3D%27M14%2014H42V28C42%2035.732%2035.732%2042%2028%2042C20.268%2042%2014%2035.732%2014%2028V14Z%27%20fill%3D%27%2324B8EB%27/%3E%3Cpath%20d%3D%27M28%2014V31L25%2028H14V14H28Z%27%20fill%3D%27%230D8E45%27/%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 600px;
+        padding: 60px 40px;
+        background: white;
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+      }
+
+      .logo {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 30px;
+        background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 30px rgba(21, 101, 192, 0.227);
+      }
+
+      .logo svg {
+        width: 60px;
+        height: 60px;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 16px;
+      }
+
+      .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #fff3e0;
+        color: #e65100;
+        padding: 8px 20px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+
+      .status-badge::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #ff9800;
+        border-radius: 50%;
+        animation: pulse 1.5s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.4;
+        }
+      }
+
+      p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 32px;
+      }
+
+      .contact-info {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 24px;
+        text-align: left;
+      }
+
+      .contact-info h3 {
+        font-size: 14px;
+        color: #888;
+        font-weight: 500;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .contact-info p {
+        color: #333;
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      .contact-info a {
+        color: #d32f2f;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 40px;
+        padding-top: 24px;
+        border-top: 1px solid #eee;
+      }
+
+      .footer p {
+        font-size: 13px;
+        color: #999;
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 40px 24px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        .logo {
+          width: 80px;
+          height: 80px;
+        }
+
+        .logo svg {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <svg
+          width="42"
+          height="42"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 14C0 6.26801 6.26801 0 14 0H28V31L25 28H14C6.26801 28 0 21.732 0 14Z"
+            fill="#FFCD2A"
+          />
+          <path
+            d="M14 14H42V28C42 35.732 35.732 42 28 42C20.268 42 14 35.732 14 28V14Z"
+            fill="#24B8EB"
+          />
+          <path d="M28 14V31L25 28H14V14H28Z" fill="#0D8E45" />
+        </svg>
+      </div>
+
+      <h1>Sedang Dalam Pemeliharaan</h1>
+
+      <div class="status-badge">Maintenance Mode</div>
+
+      <p>
+        Kami sedang melakukan pemeliharaan sistem untuk meningkatkan kualitas
+        layanan.
+        <!-- Dashboard Jabar akan kembali hadir dengan tampilan baru yang -->
+        <!-- lebih baik. -->
+      </p>
+
+      <!-- <div class="contact-info">
+        <h3>Butuh Bantuan?</h3>
+        <p>
+          Email: <a href="mailto:info@jabarprov.go.id">info@jabarprov.go.id</a>
+        </p>
+        <p>Telepon: <a href="tel:022-420-1234">022-420-1234</a></p>
+      </div> -->
+
+      <div class="footer">
+        <p>&copy; 2026 Pemerintahan Daerah Provinsi Jawa Barat</p>
+      </div>
+    </div>
+  </body>
+</html>
